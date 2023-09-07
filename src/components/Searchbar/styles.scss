@@ -1,0 +1,44 @@
+@use "../../styles/globalStyles" as style;
+
+.searchBarContainer {
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  overflow: hidden;
+
+  input {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+.searchbarDark {
+  background-color: style.$background1;
+  color: style.$fontColor1;
+
+  input {
+    background-color: style.$background1;
+    color: style.$fontColor1;
+  }
+
+  button {
+    color: style.$fontColor1;
+  }
+}
+
+.searchbarLight {
+  background-color: style.$background2;
+  color: style.$fontColor2;
+
+  input {
+    background-color: style.$background2;
+    color: style.$fontColor2;
+  }
+
+  button {
+    color: style.$fontColor2;
+  }
+}

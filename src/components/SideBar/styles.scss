@@ -1,0 +1,128 @@
+@use "../../styles/globalStyles" as style;
+
+.sidebar {
+  display: flex;
+  height: 100vh;
+  overflow: scroll;
+
+  .iconbar {
+    background-color: #18191b;
+
+    .tabbtn {
+      display: grid;
+      place-items: center;
+      color: rgb(153, 153, 153);
+      padding: 20px 15px;
+      transition: 0.3s;
+      cursor: pointer;
+
+      p {
+        font-size: 12px;
+        padding-top: 5px;
+      }
+
+      &:hover {
+        background-color: #252627;
+      }
+    }
+
+    .tabBtnSelected {
+      background-color: #252627;
+      color: #fff;
+    }
+  }
+
+  .icondetailsbar {
+    background-color: #252627;
+    width: 100%;
+
+    .header {
+      display: flex;
+      justify-content: flex-end;
+
+      .closeBtn {
+        padding: 12px;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+
+    .mainContent {
+      padding: 0 10px;
+      width: 300px;
+      color: #fff;
+
+      .shapesContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        .shapeBtn {
+          background-color: #4d5052;
+          padding: 20px 5px;
+          color: #fff;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: #5c6063;
+          }
+        }
+      }
+
+      .imageContainer {
+        .imageListContainer {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 15px;
+          margin-top: 20px;
+        }
+        .btnContainer {
+          margin-top: 20px;
+          display: grid;
+          place-items: center;
+        }
+      }
+    }
+  }
+}
+
+.css-yvszuv-Slider {
+  width: 100% !important;
+}
+
+.imageUploadModal {
+  color: style.$fontColor2;
+
+  .dropzone {
+    width: 100%;
+    border: 2px dashed style.$color1;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-top: 20px;
+    cursor: pointer;
+
+    .dropzoneContent {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      padding: 60px 20px;
+      transition: 0.3s;
+
+      p {
+        font-size: 20px;
+      }
+    }
+    .dropActive {
+      background-color: style.$color1_light;
+    }
+
+    &:hover {
+      background-color: style.$color1_light;
+    }
+  }
+
+  .btnContainer {
+    margin-top: 20px;
+  }
+}

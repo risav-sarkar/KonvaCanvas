@@ -1,0 +1,31 @@
+@use "../../styles/globalStyles" as style;
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.modalContainer {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 15px;
+
+  .modalContent {
+    padding: 20px 20px;
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    max-height: 90vh;
+    overflow: scroll;
+  }
+}

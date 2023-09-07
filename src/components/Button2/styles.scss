@@ -1,0 +1,17 @@
+@use "../../styles/globalStyles" as style;
+
+.button2 {
+  font-weight: 600;
+  background-color: style.$background1;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: style.$fontColor1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgb(50, 50, 50);
+  }
+}

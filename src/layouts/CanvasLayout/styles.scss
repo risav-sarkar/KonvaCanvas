@@ -1,0 +1,34 @@
+@use "../../styles/globalStyles" as style;
+
+.header {
+  background-color: rgb(42, 42, 42);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  color: style.$fontColor1;
+}
+
+.downloadModal {
+  color: style.$fontColor2;
+
+  .buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}

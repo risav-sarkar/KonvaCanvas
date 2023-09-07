@@ -1,0 +1,21 @@
+@use "../../styles/globalStyles" as style;
+
+.inputContainer {
+  width: 100%;
+
+  p {
+    padding-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .inputField {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+
+    &:focus {
+      border: 2px solid rgb(0, 0, 0);
+    }
+  }
+}

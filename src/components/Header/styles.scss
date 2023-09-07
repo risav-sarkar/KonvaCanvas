@@ -1,0 +1,20 @@
+@use "../../styles/globalStyles" as style;
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: style.$fontColor1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+  .subContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    color: #fff;
+  }
+}

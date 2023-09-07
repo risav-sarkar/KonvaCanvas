@@ -1,0 +1,16 @@
+@use "../../styles/globalStyles" as style;
+
+.canvasCardContainer {
+  display: grid;
+  gap: 5px;
+  .imageContainer {
+    height: 180px;
+    width: 250px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 15px;
+  }
+
+  .canvasName {
+    color: style.$fontColor2;
+  }
+}

@@ -1,0 +1,41 @@
+@use "../../styles/globalStyles" as style;
+
+.authContainer {
+  background-color: style.$background1;
+  min-height: 100vh;
+
+  .authContent {
+    color: style.$fontColor2;
+    padding: 50px 20px;
+    .formContainer {
+      background-color: style.$background2;
+      max-width: 500px;
+      margin: 0 auto;
+      border-radius: style.$borderRadius1;
+      padding: 30px 15px;
+
+      .inputsContainer {
+        margin-top: 30px;
+        display: grid;
+        gap: 20px;
+      }
+
+      .redirectMessage {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 600;
+        margin: 0 auto;
+
+        button {
+          font-weight: 700;
+          color: style.$fontColor2;
+          padding: 5px;
+          &:hover {
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+      }
+    }
+  }
+}

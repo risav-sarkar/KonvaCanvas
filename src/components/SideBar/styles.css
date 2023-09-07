@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  background-color: transparent;
+  background-color: transparent;
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0 !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input {
+  transition: 0.3s;
+  border: none;
+  outline: none;
+}
+
+.shadow {
+  box-shadow: 0px 5px 25px 0px rgba(40, 126, 184, 0.15);
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.sidebar {
+  display: flex;
+  height: 100vh;
+  overflow: scroll;
+}
+.sidebar .iconbar {
+  background-color: #18191b;
+}
+.sidebar .iconbar .tabbtn {
+  display: grid;
+  place-items: center;
+  color: rgb(153, 153, 153);
+  padding: 20px 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sidebar .iconbar .tabbtn p {
+  font-size: 12px;
+  padding-top: 5px;
+}
+.sidebar .iconbar .tabbtn:hover {
+  background-color: #252627;
+}
+.sidebar .iconbar .tabBtnSelected {
+  background-color: #252627;
+  color: #fff;
+}
+.sidebar .icondetailsbar {
+  background-color: #252627;
+  width: 100%;
+}
+.sidebar .icondetailsbar .header {
+  display: flex;
+  justify-content: flex-end;
+}
+.sidebar .icondetailsbar .header .closeBtn {
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+}
+.sidebar .icondetailsbar .mainContent {
+  padding: 0 10px;
+  width: 300px;
+  color: #fff;
+}
+.sidebar .icondetailsbar .mainContent .shapesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.sidebar .icondetailsbar .mainContent .shapesContainer .shapeBtn {
+  background-color: #4d5052;
+  padding: 20px 5px;
+  color: #fff;
+  border-radius: 10px;
+}
+.sidebar .icondetailsbar .mainContent .shapesContainer .shapeBtn:hover {
+  background-color: #5c6063;
+}
+.sidebar .icondetailsbar .mainContent .imageContainer .imageListContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+.sidebar .icondetailsbar .mainContent .imageContainer .btnContainer {
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.css-yvszuv-Slider {
+  width: 100% !important;
+}
+
+.imageUploadModal {
+  color: #000000;
+}
+.imageUploadModal .dropzone {
+  width: 100%;
+  border: 2px dashed #2557a7;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.imageUploadModal .dropzone .dropzoneContent {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 60px 20px;
+  transition: 0.3s;
+}
+.imageUploadModal .dropzone .dropzoneContent p {
+  font-size: 20px;
+}
+.imageUploadModal .dropzone .dropActive {
+  background-color: rgba(122, 172, 252, 0.2);
+}
+.imageUploadModal .dropzone:hover {
+  background-color: rgba(122, 172, 252, 0.2);
+}
+.imageUploadModal .btnContainer {
+  margin-top: 20px;
+}

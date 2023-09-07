@@ -1,0 +1,17 @@
+@use "../../styles/globalStyles" as style;
+
+.homeContainer {
+  background-color: style.$background1;
+  min-height: 100vh;
+
+  .homeContent {
+    .heroContainer {
+      display: grid;
+      place-items: center;
+      padding: 40px 20px;
+      .imageContainer {
+        max-width: 800px;
+      }
+    }
+  }
+}

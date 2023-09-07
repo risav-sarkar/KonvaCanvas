@@ -1,0 +1,24 @@
+@use "../../styles/globalStyles" as style;
+
+.canvasContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100vw;
+  height: 100vh;
+
+  .drawingArea {
+    background-color: rgb(224, 224, 224);
+    overflow: scroll;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    .canvas {
+      height: 600px;
+      width: 700px;
+      background-color: #fff;
+      border-radius: 5px;
+      place-self: center;
+      margin: 20px;
+    }
+  }
+}

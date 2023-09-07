@@ -1,0 +1,32 @@
+@use "../../styles/globalStyles" as style;
+
+.contextContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.2);
+  place-items: center;
+
+  .mainContent {
+    background-color: style.$background3;
+    overflow: hidden;
+    font-size: 20px;
+    width: fit-content;
+    display: grid;
+    gap: 5px;
+    border-radius: 10px;
+
+    button {
+      color: style.$fontColor1;
+      text-align: left;
+      padding: 10px 30px;
+
+      &:hover {
+        background-color: style.$hoverDark;
+      }
+    }
+  }
+}

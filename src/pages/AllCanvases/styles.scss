@@ -1,0 +1,12 @@
+@use "../../styles/globalStyles" as style;
+
+.allCanvasesContainer {
+  color: style.$fontColor2;
+
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
